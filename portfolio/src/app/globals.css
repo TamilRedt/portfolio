@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --neon-cyan: #00f5ff;
+  --neon-green: #39ff14;
+  --neon-purple: #bf00ff;
+  --neon-pink: #ff006e;
+  --dark-950: #020408;
+  --dark-900: #060d14;
+  --dark-800: #0a1628;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--dark-950);
+  color: #e0e8ff;
+  font-family: 'Rajdhani', sans-serif;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--dark-900); }
+::-webkit-scrollbar-thumb {
+  background: var(--neon-cyan);
+  border-radius: 2px;
+  box-shadow: 0 0 8px var(--neon-cyan);
+}
+
+.cursor {
+  width: 10px; height: 10px;
+  background: var(--neon-cyan);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  box-shadow: 0 0 10px var(--neon-cyan), 0 0 20px var(--neon-cyan);
+  transition: transform 0.08s ease;
+}
+
+.cursor-ring {
+  width: 32px; height: 32px;
+  border: 1px solid rgba(0, 245, 255, 0.5);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+  transition: all 0.12s ease;
+}
+
+.glass {
+  background: rgba(10, 22, 40, 0.65);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 245, 255, 0.12);
+}
+
+.neon-text {
+  color: var(--neon-cyan);
+  text-shadow: 0 0 10px var(--neon-cyan), 0 0 30px var(--neon-cyan);
+}
+
+.neon-border {
+  border: 1px solid var(--neon-cyan);
+  box-shadow: 0 0 10px rgba(0, 245, 255, 0.3), inset 0 0 10px rgba(0, 245, 255, 0.05);
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(0, 245, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 245, 255, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.hex-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100'%3E%3Cpath d='M28 66L0 50V16L28 0l28 16v34z' fill='none' stroke='rgba(0,245,255,0.04)' stroke-width='1'/%3E%3Cpath d='M28 100L0 84V50l28-16 28 16v34z' fill='none' stroke='rgba(0,245,255,0.04)' stroke-width='1'/%3E%3C/svg%3E");
+}
+
+.scanlines {
+  position: relative;
+}
+.scanlines::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg, transparent, transparent 2px,
+    rgba(0, 245, 255, 0.012) 2px,
+    rgba(0, 245, 255, 0.012) 4px
+  );
+  pointer-events: none;
+  z-index: 10;
+}
+
+@keyframes glitch-a {
+  0%, 100% { clip-path: inset(0 0 95% 0); transform: translate(-3px); }
+  20% { clip-path: inset(30% 0 50% 0); transform: translate(3px); }
+  40% { clip-path: inset(60% 0 20% 0); transform: translate(-2px); }
+  60% { clip-path: inset(10% 0 80% 0); transform: translate(2px); }
+  80% { clip-path: inset(80% 0 5% 0); transform: translate(-3px); }
+}
+
+@keyframes glitch-b {
+  0%, 100% { clip-path: inset(50% 0 30% 0); transform: translate(3px); }
+  25% { clip-path: inset(10% 0 70% 0); transform: translate(-3px); }
+  50% { clip-path: inset(80% 0 10% 0); transform: translate(2px); }
+  75% { clip-path: inset(20% 0 60% 0); transform: translate(-2px); }
+}
+
+.glitch { position: relative; }
+.glitch::before, .glitch::after {
+  content: attr(data-text);
+  position: absolute; inset: 0;
+}
+.glitch::before { animation: glitch-a 4s infinite; color: var(--neon-cyan); opacity: 0.7; }
+.glitch::after  { animation: glitch-b 4s infinite; color: var(--neon-pink); opacity: 0.7; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-16px); }
+}
+.float { animation: float 6s ease-in-out infinite; }
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 5px var(--neon-cyan), 0 0 15px rgba(0,245,255,0.3); }
+  50% { box-shadow: 0 0 15px var(--neon-cyan), 0 0 40px rgba(0,245,255,0.5), 0 0 80px rgba(0,245,255,0.2); }
+}
+.pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
+
+@keyframes typing { from { width: 0; } to { width: 100%; } }
+@keyframes blink { 50% { border-color: transparent; } }
+
+.section-title {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+}
