@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Alex Cipher | Developer & Security Researcher",
+  title: "Tamil Arasan| Developer & Security Researcher",
   description: "Full-stack developer and cybersecurity enthusiast. Building secure, performant applications and exploring the frontier of digital defense.",
   keywords: ["developer", "cybersecurity", "portfolio", "full-stack", "react", "nextjs"],
   openGraph: {
-    title: "Alex Cipher | Developer & Security Researcher",
+    title: "Tamil Arasan| Developer & Security Researcher",
     description: "Full-stack developer and cybersecurity enthusiast.",
     type: "website",
   },
