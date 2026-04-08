@@ -109,11 +109,11 @@ export default function AboutSection() {
                 <span className="ml-2 text-xs text-slate-500">~/whoami.sh</span>
               </div>
               <div className="space-y-1 text-xs" style={{ fontFamily: "'Share Tech Mono'" }}>
-                <div><span style={{ color: "var(--neon-green)" }}>alex@cipher</span><span className="text-slate-500">:~$</span> <span className="text-slate-300">whoami</span></div>
+                <div><span style={{ color: "var(--neon-green)" }}>tamil@arsan</span><span className="text-slate-500">:~$</span> <span className="text-slate-300">whoami</span></div>
                 <div className="text-slate-400 pl-0">Developer | Security Researcher | CTF Player</div>
-                <div className="mt-2"><span style={{ color: "var(--neon-green)" }}>alex@cipher</span><span className="text-slate-500">:~$</span> <span className="text-slate-300">cat interests.txt</span></div>
+                <div className="mt-2"><span style={{ color: "var(--neon-green)" }}>tamil@rasan</span><span className="text-slate-500">:~$</span> <span className="text-slate-300">cat interests.txt</span></div>
                 <div className="text-slate-400">["web security", "reverse engineering", "cloud", "ai/ml"]</div>
-                <div className="mt-2"><span style={{ color: "var(--neon-green)" }}>alex@cipher</span><span className="text-slate-500">:~$</span> <span style={{ color: "var(--neon-cyan)" }}>█</span></div>
+                <div className="mt-2"><span style={{ color: "var(--neon-green)" }}>tamil@rasan</span><span className="text-slate-500">:~$</span> <span style={{ color: "var(--neon-cyan)" }}>█</span></div>
               </div>
             </motion.div>
 
