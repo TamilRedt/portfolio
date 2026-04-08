@@ -168,7 +168,7 @@ export default function HeroSection() {
         >
           <span
             className="glitch"
-            data-text="ALEX"
+            data-text="Tamil"
             style={{
               color: "white",
               textShadow: "0 0 40px rgba(255,255,255,0.1)",
@@ -179,7 +179,7 @@ export default function HeroSection() {
           <br />
           <span
             className="glitch"
-            data-text="CIPHER"
+            data-text="Arasan"
             style={{
               color: "var(--neon-cyan)",
               textShadow: "0 0 30px var(--neon-cyan), 0 0 60px rgba(0,245,255,0.3)",
