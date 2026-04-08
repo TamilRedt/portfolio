@@ -32,9 +32,9 @@ export default function ContactSection() {
   };
 
   const contactInfo = [
-    { icon: Mail, label: "EMAIL", value: "alex@cipher.dev", href: "mailto:alex@cipher.dev" },
-    { icon: MapPin, label: "LOCATION", value: "San Francisco, CA", href: null },
-    { icon: Github, label: "GITHUB", value: "github.com/alexcipher", href: "https://github.com" },
+    { icon: Mail, label: "EMAIL", value: "arasanredt@gmail.com", href: "mailto:alex@cipher.dev" },
+    { icon: MapPin, label: "LOCATION", value: "Bangalore, Karnataka, India", href: null },
+    { icon: Github, label: "GITHUB", value: "github.com/TamilRedt", href: "https://github.com" },
     { icon: Linkedin, label: "LINKEDIN", value: "linkedin.com/in/alexcipher", href: "https://linkedin.com" },
   ];
 
