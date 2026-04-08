@@ -174,7 +174,7 @@ export default function HeroSection() {
               textShadow: "0 0 40px rgba(255,255,255,0.1)",
             }}
           >
-            ALEX
+            Tamil
           </span>
           <br />
           <span
@@ -185,7 +185,7 @@ export default function HeroSection() {
               textShadow: "0 0 30px var(--neon-cyan), 0 0 60px rgba(0,245,255,0.3)",
             }}
           >
-            CIPHER
+            Arasan
           </span>
         </motion.h1>
 
