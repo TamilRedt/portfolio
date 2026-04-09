@@ -87,7 +87,7 @@ export default function Navbar() {
 
         {/* Resume button */}
         <a
-          href="/resume.pdf"
+          href="/https://github.com/TamilRedt/portfolio/blob/main/portfolio/public/updated%20Tamilarasan%20resume.pdf"
           download
           className="hidden md:flex items-center gap-2 px-4 py-2 text-xs tracking-widest border transition-all duration-300 hover:bg-[rgba(0,245,255,0.1)]"
           style={{
@@ -143,7 +143,7 @@ export default function Navbar() {
               ))}
               <li>
                 <a
-                  href="/upadted Tamilarasan resume.pdf"
+                  href="/https://github.com/TamilRedt/portfolio/blob/main/portfolio/public/updated%20Tamilarasan%20resume.pdf"
                   download
                   className="inline-flex items-center gap-2 px-4 py-2 text-xs tracking-widest border border-[var(--neon-cyan)] text-[var(--neon-cyan)]"
                   style={{ fontFamily: "'Share Tech Mono'" }}
