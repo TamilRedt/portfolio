@@ -143,7 +143,7 @@ export default function Navbar() {
               ))}
               <li>
                 <a
-                  href="/resume.pdf"
+                  href="/upadted Tamilarasan resume.pdf"
                   download
                   className="inline-flex items-center gap-2 px-4 py-2 text-xs tracking-widest border border-[var(--neon-cyan)] text-[var(--neon-cyan)]"
                   style={{ fontFamily: "'Share Tech Mono'" }}
