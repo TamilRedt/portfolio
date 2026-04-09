@@ -16,7 +16,7 @@ export default function Footer() {
           <div className="flex items-center gap-3">
             <Terminal size={16} style={{ color: "var(--neon-cyan)" }} />
             <span className="text-sm text-slate-500" style={{ fontFamily: "'Share Tech Mono'" }}>
-              alex@cipher:~$ <span style={{ color: "var(--neon-cyan)" }}>echo "Built with passion"</span>
+              tamil@arasan:~$ <span style={{ color: "var(--neon-cyan)" }}>echo "Built with passion"</span>
             </span>
           </div>
 
@@ -38,7 +38,7 @@ export default function Footer() {
           </div>
 
           <div className="text-xs text-slate-600" style={{ fontFamily: "'Share Tech Mono'" }}>
-            © 2024 ALEX CIPHER. ALL RIGHTS RESERVED.
+            © 2026 TAMIL ARASAN. ALL RIGHTS RESERVED.
           </div>
         </div>
       </div>
